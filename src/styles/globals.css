@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -8,26 +9,44 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins', sans-serif;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/* .Beams {
+  display: flex;
+  justify-content: space-between;
+  gap: 15rem;
+  padding: 2rem 7;
+  width: 50%;
+} */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 7%;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background-color: #111827;
+  color: white;
 }
-
+.na {
+  gap: 2rem;
+}
+.intro {
+  width: 50vh !important;
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+.Demo {
+  display: flex;
+}
+.img-bck {
+  z-index: 50;
 }

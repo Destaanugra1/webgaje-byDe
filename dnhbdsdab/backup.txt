@@ -1,0 +1,44 @@
+"use client";
+import React from "react";
+import { BackgroundBeams } from "../ui/background-beams";
+import { TextRevealCardPreview } from "./privew"; // Assuming there's a typo in your code, it should be preview instead of privew
+import { DirectionAwareHoverDemo } from "./aware";
+import { CardSpotlightDemo } from "./canvas";
+
+export function BackgroundBeamsDemo() {
+  return (
+    <>
+      <div className="h-[40rem] w-full rounded-md bg-neutral-950 relative flex flex-col justify-between antialiased">
+        {/* Main container with flex-row to align items side by side */}
+        <div className="max-w-6xl p-4 flex flex-row justify-between items-start mx-auto h-full">
+          {/* Text Section */}
+          <div className="flex-1 p-10">
+            <h1 className="relative z-10 text-lg md:text-4xl text-white font-sans font-bold">
+              Lorem ipsum
+            </h1>
+            <p className="text-neutral-500 max-w-lg my-2 text-sm relative z-10">
+              Welcome to MailJet, the best transactional email service on the
+              web. We provide reliable, scalable, and customizable email.
+            </p>
+          </div>
+
+          {/* Card Section - Combining all cards into one container */}
+          <div className="relative flex flex-col items-center gap-4">
+            <div className="relative  card-bck">
+              <TextRevealCardPreview />
+            </div>
+            <div className="absolute top-0  left-20">
+              <BackgroundBeams />
+            </div>
+            <div className="absolute top-30 mr-72 mt-55 left-30">
+              <DirectionAwareHoverDemo />
+            </div>
+            <div className="absolute top-40 ml-20 left-40">
+              <CardSpotlightDemo />
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
