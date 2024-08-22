@@ -68,10 +68,4 @@ export const products = [
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/smartbridge.png",
   },
-  {
-    title: "Renderwork Studio",
-    link: "https://renderwork.studio",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/renderwork.png",
-  },
 ];

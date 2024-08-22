@@ -50,3 +50,21 @@ nav {
 .img-bck {
   z-index: 50;
 }
+/* mobile */
+@media (max-width: 768px) {
+  .container-bg {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .container-hero {
+    height: 228vh;
+    
+  }
+}

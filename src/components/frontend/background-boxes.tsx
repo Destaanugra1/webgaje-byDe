@@ -8,9 +8,9 @@ import { CoverDemo } from "./cover";
 
 export function BackgroundBoxesDemo() {
   return (
-    <div className="h-[100vh] relative w-full overflow-hidden bg-slate-900 flex flex-col items-center justify-center rounded-lg">
+    <div className="h-[100vh] relative w-full overflow-hidden bg-slate-900 flex flex-col items-center justify-center rounded-lg container-bg">
       <div className="absolute inset-0 w-full h-full bg-slate-900 z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
-      <div className="flex justify-between items-center p-4 md:flex  ">
+      <div className="flex justify-between items-center p-4 container-text  ">
         <Boxes />
         <div className="text-center justify-center m-4 ">
           <h1 className={cn("md:text-3xl text-xl text-white relative z-20")}>
